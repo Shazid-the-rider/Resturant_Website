@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+*{
+    scroll-behavior: smooth;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    width:100%;
+}
+.row::after{
+    clear: both;
+    display: table;
+    content:'';
+}
+.navigation-head::after{
+    clear: both;
+    display: table;
+    content:'';
+}
+.navigation-head{
+    padding-top: 20px;
+    background-image: linear-gradient(to right,black,rgb(7, 7, 133));
+    background-color: aquamarine;
+}
+.navigation-head .logo img{
+    width:100px;
+    height:100px;
+    padding:10px;
+    border-radius: 50%;
+}
+.navigation-head .logo{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.navigation-head .name nav{
+    font-family: "Lora", serif;
+    font-size: 28;
+    text-align: center;
+    color:white;
+}
+.navigation-head .navmenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:25px;
+}
+
+.navigation-head .navmenu a{
+    text-decoration: none;
+    font-size: 19;
+    padding:12px;
+    text-transform: uppercase;
+    color:white;
+    background-color: rgb(19, 154, 154);
+    margin:4px 15px;
+    border-radius: 10px;
+}
+.navigation-head .navmenu a:hover{
+    background-color:yellow;
+    color:black;
+}
+.bg-image::after{
+    clear:both;
+    display:table;
+    content:'';
+}
+.bg-image{
+    background-image:url("picture/hotel.jpg");
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-image .element{
+   padding:50px 0px;
+   text-align: center;
+    
+}
+.bg-image .element h1{
+    font-family: "Reenie Beanie", cursive;
+    color:black;
+    font-size: 3.9rem;
+    background-color: rgb(255, 255, 0,.798);
+    padding:20px;
+    margin:0 20px;
+    border-radius: 5px;
+}
+.bg-image .element p{
+    background-color: green;
+    margin:15px 40px;
+    padding:15px;
+    color:white;
+    font-size: 24;
+    border-radius: 5px;
+    font-family: "Bona Nova SC", serif;
+}
+.bg-image .element .btn{
+     padding:10px;
+     font-family: "Bona Nova SC", serif;
+     font-size: 24;
+     color:white;
+     background-color: green;
+     border-radius:5px;
+     
+}
+.about::after{
+    clear:both;
+    display:table;
+    content:'';
+}
+.about{
+    padding:20px 10px;
+}
+.about nav{
+    text-transform: uppercase;
+    font-family:"Bona Nova SC",serif;
+    font-size: 23;
+    text-align: center;
+}
+.about p{
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: "Lora", serif;
+    font-size: 12;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+.cardbody{
+    text-align: center;
+}
+.cardbody img{
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  max-width: 100%;
+  height:auto;
+  display: block;
+}
+.cardbody p{
+    font-size: 25;
+    font-family: "Lora";
+    padding:10px;
+    font-weight:500;
+    background-color: rgb(0, 255, 34);
+}
+.cardbody nav{
+    padding:10px;
+    font-weight: 500;
+    font-size: 18;
+    font-family: "Lora";
+}
+.cardbody .card-info{
+    padding-bottom: 20px;
+  background-color: rgb(229, 229, 229);
+}
+.row{
+    padding:0px 20px;
+}
+.card{
+    margin:10px;
+}
+.card:hover{
+    transform:scale(1.1);
+}
+hr{
+    visibility: hidden;
+}
+.map .google-map iframe{
+     width:100%;
+     height:300px;
+}
+.map{
+    margin:0px 0px;
+    background-color: black;
+}
+.map .google-map{
+
+    text-align: center;
+}
+.map .in{
+    padding:10px;
+   
+}
+.map .in >div{
+    padding:15px 0px;
+    text-align: center;
+}
+.map .in .x{
+    font-family: arial;
+    color: white;
+    font-size:1.2rem;
+    text-transform: uppercase;
+}
+.map .in .y{
+    font-family: arial;
+    color: white;
+    font-size:1rem;
+}
